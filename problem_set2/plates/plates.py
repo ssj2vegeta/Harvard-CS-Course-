@@ -3,14 +3,14 @@ list2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '
 list3 = ['0','1','2','3','4','5','6','7','8','9']
 emptlist = []
 def main():
-    password = input("Please input a password (must have 2 letters at start, minimum of 8 and maximum of 14 letters, no periods, spaces or punctuation marks, numbers cant be used in the middle of the plate and first number cant be 0):")
-    if is_valid(password):
+    plate = input("Plate: ")
+    if is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
 
 def lenfunction(s):
-    if len(s) >= 8 and len(s) <= 14:
+    if len(s) >= 2 and len(s) <= 6:
         return True
     else:
         return False
